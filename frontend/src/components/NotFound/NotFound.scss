@@ -1,0 +1,30 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 var(--size-16);
+  height: 100vh;
+
+  &__quote {
+    margin-bottom: var(--size-60);
+    font-size: var(--size-20);
+    color: var(--blue);
+    text-align: center;
+  }
+
+  &__error {
+    &-message,
+    &-code {
+      color: var(--blue-600);
+      font-size: var(--size-40);
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+    }
+
+    &-code {
+      font-size: var(--size-100);
+    }
+  }
+}

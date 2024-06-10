@@ -1,0 +1,47 @@
+.button {
+  padding: var(--size-10) var(--size-22);
+  border: none;
+  font-size: var(--size-16);
+  line-height: 1.4rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.primary {
+    background: var(--blue-700);
+    color: var(--white);
+    font-weight: var(--medium);
+    border-radius: var(--size-22);
+
+    &:hover {
+      background: var(--blue-400);
+      color: var(--white);
+    }
+  }
+
+  &.secondary {
+    background: transparent;
+    border: 1px solid var(--grey-200);
+    color: var(--grey-700);
+    font-style: italic;
+
+    &:hover {
+      border-color: var(--grey-400);
+    }
+  }
+
+  &.right {
+    align-self: flex-end;
+  }
+
+  @media screen and (max-width: 480px) {
+    &.right {
+      align-self: normal;
+    }
+  }
+
+  &.medium {
+    width: 33%;
+  }
+}

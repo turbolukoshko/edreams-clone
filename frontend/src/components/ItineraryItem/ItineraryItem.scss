@@ -1,0 +1,76 @@
+.itinerary-list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: var(--size-10);
+    margin: var(--size-16);
+    background: transparent;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    &-info {
+      width: 80%;
+      padding: var(--size-16);
+      border-radius: var(--size-10);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      &-airline {
+        font-size: var(--size-16);
+        font-weight: var(--medium);
+        color: var(--grey-300);
+        margin: 0;
+      }
+
+      &-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-time {
+          font-weight: var(--medium);
+        }
+
+        &-date {
+          font-size: var(--size-14);
+          font-weight: var(--medium);
+        }
+      }
+    }
+
+    &-price {
+      width: 20%;
+      border-left: 1px dashed #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: var(--size-16);
+      position: relative;
+      border-radius: var(--size-10);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        border-left: none;
+        border-top: 1px dashed #ccc;
+        box-sizing: border-box;
+      }
+
+      &-inner {
+        font-weight: var(--medium);
+        text-align: center;
+        margin: var(--size-10) 0;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

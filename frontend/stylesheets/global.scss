@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+:root {
+  // Typography
+  --size-5: 5px;
+  --size-8: 8px;
+  --size-10: 10px;
+  --size-12: 12px;
+  --size-14: 14px;
+  --size-15: 15px;
+  --size-16: 16px;
+  --size-18: 18px;
+  --size-20: 20px;
+  --size-22: 22px;
+  --size-40: 40px;
+  --size-60: 60px;
+  --size-100: 100px;
+  --size-300: 300px;
+
+  --medium: 600;
+  --bold: 700;
+
+  // Color Pallete
+
+  --white: #fff;
+  --white-100: #f0f0f0;
+
+  --blue-400: #5cb4ff;
+  --blue-500: #007bff;
+  --blue-600: #1e44d5;
+  --blue-700: #005dad;
+  --blue: #091180;
+
+  --grey-100: #bbb;
+  --grey-200: #ccc;
+  --grey-300: #999;
+  --grey-400: #888;
+  --grey-700: #333;
+
+  --red-500: #da3835;
+}
